@@ -2,6 +2,20 @@
 library(tidyverse)
 library(infer)
 
-#read car_insurance data
-car_insurance = read_csv("../data/carInsurance.csv")
-head(car_insurance, 10)
+args <- commandArgs(trailingOnly = TRUE)
+input_file <- args[1]
+output_file <- args[2]
+
+#read in data
+input_data = read_csv(input_file)
+
+# wrangle input_data to clean it up
+
+input_data$Marital[input_data$Marital == "married"] <- "married"
+input_data$Marital[input_data$Marital != "married"] <- "not-married"
+
+cleaned_data <- input_data %>% 
+  select(Id, Marital, CarInsurance)
+  
+# save wrangled input_data to output_file
+write_csv(cleaned_data, output_file)
