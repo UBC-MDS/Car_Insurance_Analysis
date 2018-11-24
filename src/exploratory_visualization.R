@@ -15,9 +15,8 @@ input_data %>%
   geom_text(stat = "count", aes(label = ..count..), vjust = -0.4, colour = "black") +
   facet_wrap(~Marital) +
   labs(x = "CarInsurance",
-       y = "QTY") +
+       y = "Value") +
   theme_bw() +
-  ggtitle("Breakdown of Car Insurance Data") +
+  ggtitle("Relationship between car insurance purchase and marital status") +
   theme(plot.title = element_text(hjust = 0.5))
-
 ggsave(output_file)
