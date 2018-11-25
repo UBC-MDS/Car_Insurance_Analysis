@@ -1,5 +1,12 @@
 # DSCI_522_Car_Insurance_Analysis
 
+Contributors:
+
+- [Marcelle Araujo Chiriboga Carvalho](http://github.ubc.ca/mchirib)
+- [Phuntsok Tseten](http://github.ubc.ca/ptseten)
+
+## Overview
+
 ### 1. Data set
 
 This project works with the [Car Insurance Cold Calls data set, from Kaggle](https://www.kaggle.com/kondla/carinsurance#carInsurance_test.csv). It contains data about 4000 customers for a bank in the USA that received cold calls offering car insurance services. The dataset also includes the outcomes of said calls, i.e. if the customers acquired car insurance or not as a result of the call. 
@@ -12,7 +19,7 @@ The purpose of this project is to carry out an exploratory analysis to identify 
 
 ### 3. Analysis Plan
 
-In order to answer the question formulated in the previous section, we will perform a hypothesis test to assess if groups with different marital status show different proportions in their acceptance of the car insurance offered.
+In order to answer the question formulated in the previous section, we perform a hypothesis test to assess if groups with different marital status show different proportions in their acceptance of the car insurance offered.
 
 In the chosen data set, customers are classified as `married`, `single`, or `divorced`. Since we will perform a two-group hypothesis test, as a first step in our analysis, we will break down the customers into two groups, `married` and `not-married`, where the latter includes `single` and `divorced` individuals.
 
@@ -24,4 +31,27 @@ $H_A$: Acceptance rate of car insurance offers for married individuals is differ
 
 ### 4. Reporting
 
-To report the results of our analysis we will compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we can evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.
+To report the results of our analysis we compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.
+
+## Usage
+
+To run the data analysis pipeline execute the following command in the terminal, at the root of the project
+
+```
+bash run_all.sh
+```
+
+The report will be rendered into a PDF document in the `report` folder
+
+## Dependencies
+
+R version 3.5.1
+
+library(ggplot2)
+library(tidyverse)
+library(broom)
+  
+
+## Releases
+ - [V1.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v1.0) Proposal
+ - [V2.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0) Milestone 1 
