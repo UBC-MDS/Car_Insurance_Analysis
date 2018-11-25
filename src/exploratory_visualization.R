@@ -16,6 +16,10 @@ output_file <- args[2]
 #read in data
 input_data = read_csv(input_file)
 
+# make Marital and CarInsurance a factor
+input_data <- input_data %>% 
+  mutate(CarInsurance = factor(CarInsurance), Marital = factor(Marital))
+
 # visualize the data
 input_data %>%
   ggplot(aes(x = CarInsurance, fill = CarInsurance)) +
