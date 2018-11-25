@@ -1,3 +1,11 @@
+#! /usr/bin/env Rscript
+# exploratory_visualization.R
+# Team members: Marcelle Chiriboga, Phuntsok Tseten
+#
+# Second script that reads the data from the first script and creates an exploratory visualization.
+#
+# Usage: Rscript src/exploratory_visualization.R data/cleanedCarInsurance.csv results/visualization.png
+
 # load libraries
 library(tidyverse)
 
@@ -19,4 +27,5 @@ input_data %>%
   theme_bw() +
   ggtitle("Relationship between car insurance purchase and marital status") +
   theme(plot.title = element_text(hjust = 0.5))
+
 ggsave(output_file)

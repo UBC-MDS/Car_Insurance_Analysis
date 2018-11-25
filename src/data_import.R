@@ -1,3 +1,12 @@
+#! /usr/bin/env Rscript
+# data_import.R
+# Team members: Marcelle Chiriboga, Phuntsok Tseten
+#
+# First script that reads a .csv and saves a clean version of it. 
+#
+# Usage: Rscript src/data_import.R data/carInsurance data/cleanedCarInsurance.csv
+
+
 # load libraries
 library(tidyverse)
 library(infer)
