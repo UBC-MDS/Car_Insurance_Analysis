@@ -54,4 +54,4 @@ library(broom)
 
 ## Releases
  - [V1.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v1.0) Proposal
- - [V2.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0) Milestone 1 
+ - [V2.0.1](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0.1) Milestone 1 
