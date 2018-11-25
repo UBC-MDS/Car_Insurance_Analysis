@@ -9,7 +9,7 @@ Contributors:
 
 ### 1. Data set
 
-This project works with the [Car Insurance Cold Calls data set, from Kaggle](https://www.kaggle.com/kondla/carinsurance#carInsurance_test.csv). It contains data about 4000 customers for a bank in the USA that received cold calls offering car insurance services. The dataset also includes the outcomes of said calls, i.e. if the customers acquired car insurance or not as a result of the call. 
+This project works with the [Car Insurance Cold Calls data set, from Kaggle](https://www.kaggle.com/kondla/carinsurance#carInsurance_test.csv). It contains data about 4000 customers for a bank in the USA that received cold calls offering car insurance services. The dataset also includes the outcomes of said calls, i.e. if the customers acquired car insurance or not as a result of the call.
 
 The data set can be loaded into R with the data_import.R script that is included in the [src folder](/src). The data set itself – carInsurance.csv – is stored in the [data folder](/data).
 
@@ -35,6 +35,10 @@ To report the results of our analysis we compute the acceptance rate of car insu
 
 ## Usage
 
+This project contains four mains steps including data cleaning, exploratory data analysis, statistical analysis (hypothesis test) and final report.
+
+![](Flowchart.png)
+
 To run the data analysis pipeline execute the following command in the terminal, at the root of the project
 
 ```
@@ -50,8 +54,8 @@ R version 3.5.1
 library(ggplot2)
 library(tidyverse)
 library(broom)
-  
+
 
 ## Releases
  - [V1.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v1.0) Proposal
- - [V2.0.1](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0.1) Milestone 1 
+ - [V2.0.2](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0.2) Milestone 1 
