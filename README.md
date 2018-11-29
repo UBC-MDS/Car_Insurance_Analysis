@@ -33,6 +33,8 @@ $H_A$: Acceptance rate of car insurance offers for married individuals is differ
 
 To report the results of our analysis we compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.
 
+The report can be accessed at https://github.com/UBC-MDS/Car_Insurance_Analysis/blob/master/report/report.pdf
+
 ## Usage
 
 This project contains four mains steps including data cleaning, exploratory data analysis, statistical analysis (hypothesis test) and final report.
@@ -51,11 +53,11 @@ The report will be rendered into a PDF document in the `report` folder
 
 R version 3.5.1
 
-library(ggplot2)
-library(tidyverse)
-library(broom)
+- library(ggplot2)
+- library(tidyverse)
+- library(broom)
 
 
 ## Releases
  - [V1.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v1.0) Proposal
- - [V2.0.2](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0.2) Milestone 1 
+ - [V2.0.2](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0.2) Milestone 1
