@@ -1,10 +1,10 @@
 #! /usr/bin/env Rscript
-# 2) exploratory_visualization.R
+# 2_exploratory_visualization.R
 # Team members: Marcelle Chiriboga, Phuntsok Tseten
 #
 # Second script that reads the data from the first script and creates an exploratory visualization.
 #
-# Usage: Rscript src/exploratory_visualization.R data/cleanedCarInsurance.csv results/visualization.png
+# Usage: Rscript src/2_exploratory_visualization.R data/cleanedCarInsurance.csv results/visualization.png
 
 # load libraries
 library(tidyverse)

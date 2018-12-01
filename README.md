@@ -6,14 +6,14 @@ Contributors:
 - [Marcelle Araujo Chiriboga Carvalho](http://github.ubc.ca/mchirib)
 - [Phuntsok Tseten](http://github.ubc.ca/ptseten)
 
-## Overview
 
-## O. Introduction
+### Introduction
+
 Accidents can happen anytime, so having a car insurance is crucial but buying a car insurance can be a daunting task. The dire need of car insurance arises because nobody can predict when an accident might occur in the future. Buying a car insurance not only gives you peace of mind but it also shields you from any unfortunate incidents on the road.
 
-In our research, we want to understand how marital status plays a role in influencing a person's decision to buy car insurance when they are cold called by a car insurance company. 
+In our research, we want to understand how marital status plays a role in influencing a person's decision to buy car insurance when they are cold called by a car insurance company.
 
-In order to address and answer this question, we performed a Hypothesis test on different groups of people with different marital statuses, and calculated the different proportions of their acceptance of  car insurance.
+In order to address and answer this question, we performed a hypothesis test on groups of people with different marital statuses, and calculated the different proportions of their acceptance of car insurance.
 
 ### 1. Data set
 
@@ -33,13 +33,13 @@ In the chosen data set, customers are classified as `married`, `single`, or `div
 
 Thus, the null and alternative hypothesis are:
 
-$H_0$: Acceptance rate of car insurance offers for married individuals is no different than the acceptance rate for non-married individuals.
+H0: Acceptance rate of car insurance offers for married individuals is no different than the acceptance rate for non-married individuals.
 
-$H_A$: Acceptance rate of car insurance offers for married individuals is different than the acceptance rate for non-married individuals.
+HA: Acceptance rate of car insurance offers for married individuals is different than the acceptance rate for non-married individuals.
 
 ### 4. Reporting
 
-To  report the results of our analysis we will compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we can evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.We chose our alpha(significance level) to be 0.05.
+To  report the results of our analysis we will compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we can evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis. We chose our alpha (significance level) to be 0.05.
 
 To report the results of our analysis we compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.
 
@@ -49,12 +49,12 @@ The report can be accessed at https://github.com/UBC-MDS/Car_Insurance_Analysis/
 
 This project contains four mains steps including data cleaning, exploratory data analysis, statistical analysis (hypothesis test) and final report.
 
-![](Flowchart.png)
+![](fig/Flowchart.png)
 
 To run the data analysis pipeline execute the following command in the terminal, at the root of the project
 
 ```
-bash run_all.sh
+make all
 ```
 
 The report will be rendered into a PDF document in the `report` folder
@@ -71,4 +71,4 @@ R version 3.5.1
 ## Releases
  - [V1.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v1.0) Proposal
  - [V2.0.2](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0.2) Milestone 1
-
+ - [V3.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v3.0) Milestone 2
