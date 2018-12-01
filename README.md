@@ -1,5 +1,12 @@
 # DSCI_522_Car_Insurance_Analysis
 
+### O. Introduction
+Accidents can happen anytime, so having a car insurance is crucial but buying a car insurance can be a daunting task. The dire need of car insurance arises because nobody can predict when an accident might occur in the future. Buying a carinsurance not only gives you peace of mind but it also shields you from any unfortunate incidents on the road.
+
+In our research, we want to understand how marital status plays a role in influencing a person's decision to buy car insurance when they are cold called by a car insurance company. 
+
+In order to address and answer this question, we performed a Hypothesis test on different groups of people with diffeent marital statuses, and calcuated the different proportions of their acceptance of  car insurance.
+
 ### 1. Data set
 
 This project works with the [Car Insurance Cold Calls data set, from Kaggle](https://www.kaggle.com/kondla/carinsurance#carInsurance_test.csv). It contains data about 4000 customers for a bank in the USA that received cold calls offering car insurance services. The dataset also includes the outcomes of said calls, i.e. if the customers acquired car insurance or not as a result of the call. 
@@ -24,4 +31,4 @@ $H_A$: Acceptance rate of car insurance offers for married individuals is differ
 
 ### 4. Reporting
 
-To report the results of our analysis we will compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we can evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.
+To report the results of our analysis we will compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we can evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.We chose our alpha(significance level) to be 0.05.
