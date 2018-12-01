@@ -18,12 +18,12 @@ input_data = read_csv(input_file)
 
 # make Marital and CarInsurance a factor
 input_data <- input_data %>% 
-  mutate(CarInsurance = factor(CarInsurance), Marital = factor(Marital))
+  mutate(CarInsurance = factor(CarInsurance, levels = c(0, 1),labels = c("Offer Refused", "Bought")), Marital = factor(Marital))
 
 # visualize the data
 input_data %>%
   ggplot(aes(x = CarInsurance, fill = CarInsurance)) +
-  geom_bar(stat = "count", position = position_dodge()) +
+  geom_bar(stat = "count", position = position_dodge(), show.legend = FALSE) +
   geom_text(stat = "count", aes(label = ..count..), vjust = -0.4, colour = "black") +
   facet_wrap(~Marital) +
   labs(x = "CarInsurance",
