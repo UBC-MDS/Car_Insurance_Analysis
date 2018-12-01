@@ -7,7 +7,7 @@
 # bash run_all.sh
 
 # Import and clean up data
-Rscript src/data_import.R data/carInsurance data/cleanedCarInsurance.csv
+Rscript src/data_import.R data/carInsurance.csv data/cleanedCarInsurance.csv
 
 # Visualize the data set
 Rscript src/exploratory_visualization.R data/cleanedCarInsurance.csv results/visualization.png
