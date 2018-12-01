@@ -1,5 +1,5 @@
 #! /usr/bin/env Rscript
-# exploratory_visualization.R
+# 2) exploratory_visualization.R
 # Team members: Marcelle Chiriboga, Phuntsok Tseten
 #
 # Second script that reads the data from the first script and creates an exploratory visualization.
