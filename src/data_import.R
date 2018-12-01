@@ -1,5 +1,5 @@
 #! /usr/bin/env Rscript
-# data_import.R
+# 1)data_import.R
 # Team members: Marcelle Chiriboga, Phuntsok Tseten
 #
 # First script that reads a .csv and saves a clean version of it. 

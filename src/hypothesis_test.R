@@ -1,5 +1,5 @@
 #! /usr/bin/env Rscript
-# hypothesis_test.R
+#3) hypothesis_test.R
 # Team members: Marcelle Chiriboga, Phuntsok Tseten
 #
 # Third script that reads the data from the first script, 
