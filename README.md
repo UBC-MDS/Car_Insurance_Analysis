@@ -7,11 +7,13 @@ Contributors:
 - [Phuntsok Tseten](http://github.ubc.ca/ptseten)
 
 
-### Introduction
+## Introduction
 
 Accidents can happen anytime, so having a car insurance is crucial but buying a car insurance can be a daunting task. The dire need of car insurance arises because nobody can predict when an accident might occur in the future. Buying a car insurance not only gives you peace of mind but it also shields you from any unfortunate incidents on the road.
 
 In our research, we want to understand how marital status plays a role in influencing a person's decision to buy car insurance when they are cold called by a car insurance company.
+
+## Analysis
 
 In order to address and answer this question, we performed a hypothesis test on groups of people with different marital statuses, and calculated the different proportions of their acceptance of car insurance.
 
