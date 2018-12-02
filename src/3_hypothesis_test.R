@@ -1,11 +1,11 @@
 #! /usr/bin/env Rscript
-#3) hypothesis_test.R
+# 3_hypothesis_test.R
 # Team members: Marcelle Chiriboga, Phuntsok Tseten
 #
 # Third script that reads the data from the first script, 
 # performs a hypothesis test and writes these numerical data to file in .csv format. 
 #
-# Usage: Rscript src/hypothesis_test.R data/cleanedCarInsurance.csv results/summarized_hypothesis_test.csv results/alpha_h0_plot.png
+# Usage: Rscript src/3_hypothesis_test.R data/cleanedCarInsurance.csv results/summarized_hypothesis_test.csv results/alpha_h0_plot.png
 
 # load libraries
 library(tidyverse)
