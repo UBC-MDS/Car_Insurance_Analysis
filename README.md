@@ -82,21 +82,21 @@ make clean
 make all
 ```
 The `Makefile` will run the following scripts:
-1. This script takes in the raw Car Insurance data and cleans it into a data set that fits our research question.
+**Step 1.** This script takes in the raw Car Insurance data and cleans it into a data set that fits our research question.
 - Input: data/carInsurance
 - Output: data/cleanedCarInsurance.csv
 ```
 Rscript src/1_data_import.R data/carInsurance data/cleanedCarInsurance.csv
 ```
 
-2. This script reads the data from the first script and creates an exploratory visualization.
+**Step 2.** This script reads the data from the first script and creates an exploratory visualization.
 - Input: data/cleanedCarInsurance.csv
 - Output: results/visualization.png
 ```
 Rscript src/2_exploratory_visualization.R data/cleanedCarInsurance.csv results/visualization.png
 ```
 
-3. This script reads the data from the first script, performs a hypothesis test and writes these numerical data to file in .csv format.
+**Step 3.*** This script reads the data from the first script, performs a hypothesis test and writes these numerical data to file in .csv format.
 - Input: data/cleanedCarInsurance.csv
 - Output: results/summarized_hypothesis_test.csv, results/alpha_h0_plot.png
 ```
