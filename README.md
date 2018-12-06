@@ -97,7 +97,7 @@ Rscript src/1_data_import.R data/carInsurance data/cleanedCarInsurance.csv
 Rscript src/2_exploratory_visualization.R data/cleanedCarInsurance.csv results/visualization.png
 ```
 
-**Step 3.*** This script reads the data from the first script, performs a hypothesis test and writes these numerical data to file in .csv format.
+**Step 3.** This script reads the data from the first script, performs a hypothesis test and writes these numerical data to file in .csv format.
 - Input: data/cleanedCarInsurance.csv
 - Output: results/summarized_hypothesis_test.csv, results/alpha_h0_plot.png
 ```
