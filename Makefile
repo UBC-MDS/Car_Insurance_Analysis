@@ -23,3 +23,8 @@ clean :
 	rm -f results/summarized_hypothesis_test.csv
 	rm -f results/alpha_h0_plot.png
 	rm -f report/report.pdf
+	rm -f report/report.tex
+	rm -f report/report.pdf
+	rm -f report/report.html
+	rm -f report/report.md
+	rm -f Rplots.pdf
