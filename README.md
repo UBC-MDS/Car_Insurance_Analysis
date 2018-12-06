@@ -53,13 +53,36 @@ This project contains four mains steps including data cleaning, exploratory data
 
 ![](fig/Flowchart.png)
 
-To run the data analysis pipeline execute the following command in the terminal, at the root of the project
+There are two ways to run the analysis:
+
+### Docker
+1. Install [Docker](https://www.docker.com/get-started)
+2. Clone this repository
+3. Use the terminal to navigate to the root of this repository
+4. (Optional) For a fresh start, type the following command:
+```
+docker run -e PASSWORD=test --rm -v /Users/marcelle/Documents/MDS/Block_3/522_dsci-workflows/Car_Insurance_Analysis:/home/rstudio/car_insurance_analysis car_insurance_analysis:0.1 make -C /home/rstudio/car_insurance_analysis clean
+```
+
+5. To run the analyses, use the following command in the terminal:
+```
+docker run -e PASSWORD=test --rm -v /Users/marcelle/Documents/MDS/Block_3/522_dsci-workflows/Car_Insurance_Analysis:/home/rstudio/car_insurance_analysis car_insurance_analysis:0.1 make -C /home/rstudio/car_insurance_analysis all
+```
+
+### Without Docker
+To run the data analysis pipeline without docker:
+1. Clone this repository
+2. Execute the following command in the terminal, at the root of the project
 
 ```
+# (optional) for a fresh start
+make clean
+
+# to run the analyses
 make all
 ```
 
-The report will be rendered into a PDF document in the `report` folder
+Regardless of the method used, the report will be rendered into a PDF document in the `report` folder
 
 ## Dependencies
 
