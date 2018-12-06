@@ -111,9 +111,10 @@ Regardless of the method used, the report will be rendered into a PDF document i
 
 R version 3.5.1
 
-- library(ggplot2)
-- library(tidyverse)
-- library(broom)
+- library(ggplot2) - version: ggplot2_3.0.0
+- library(tidyverse) -version: tidyverse_1.2.1
+- library(infer)-version: infer_0.3.1
+- library(broom) -version: broom_0.5.0
 
 
 ## Releases
