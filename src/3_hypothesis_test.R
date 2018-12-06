@@ -63,6 +63,10 @@ h0_dist <- h0_dist + geom_vline(xintercept = c(ci_lower, ci_upper),
 p_value <- null_distribution_marital %>% 
   get_pvalue(obs_stat = delta_sample, direction = "both")
 
+
+# calculate p-value "manually"
+# p_value <- sum(abs(null_distribution_marital$stat) >= abs(delta_sample))/15000
+
 car_insurance_summary <- data.frame("delta*" = delta_sample, 
                                     "p.value" = p_value,
                                     "alpha" = 0.05, 

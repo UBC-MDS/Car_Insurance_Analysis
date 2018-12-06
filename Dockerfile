@@ -5,4 +5,5 @@
 FROM rocker/tidyverse
 
 RUN R -e "install.packages('infer', repos = 'http://cran.us.r-project.org')"
+RUN R -e "install.packages('rmarkdown', repos = 'http://cran.us.r-project.org')"
 RUN R -e "install.packages('broom', repos = 'http://cran.us.r-project.org')"

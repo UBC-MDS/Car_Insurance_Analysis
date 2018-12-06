@@ -2,7 +2,7 @@
 # 1_data_import.R
 # Team members: Marcelle Chiriboga, Phuntsok Tseten
 #
-# First script that reads a .csv and saves a clean version of it. 
+# First script that takes in the raw Car Insurance data and cleans it into a data set that fits our research question.
 #
 # Usage: Rscript src/1_data_import.R data/carInsurance data/cleanedCarInsurance.csv
 

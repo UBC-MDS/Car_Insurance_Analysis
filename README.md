@@ -45,7 +45,7 @@ To  report the results of our analysis we will compute the acceptance rate of ca
 
 To report the results of our analysis we compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.
 
-The report can be accessed at https://github.com/UBC-MDS/Car_Insurance_Analysis/blob/master/report/report.pdf
+The report can be accessed at https://github.com/UBC-MDS/Car_Insurance_Analysis/blob/master/report/report.md
 
 ## Usage
 
@@ -57,8 +57,8 @@ There are two ways to run the analysis:
 
 ### Docker
 1. Install [Docker](https://www.docker.com/get-started)
-2. Clone this repository
-3. Use the terminal to navigate to the root of this repository
+2. Clone or download this repository
+3. Use the terminal to navigate to the root of this repo
 4. (Optional) For a fresh start, type the following command:
 ```
 docker run -e PASSWORD=test --rm -v /Users/marcelle/Documents/MDS/Block_3/522_dsci-workflows/Car_Insurance_Analysis:/home/rstudio/car_insurance_analysis car_insurance_analysis:0.1 make -C /home/rstudio/car_insurance_analysis clean
@@ -71,7 +71,7 @@ docker run -e PASSWORD=test --rm -v /Users/marcelle/Documents/MDS/Block_3/522_ds
 
 ### Without Docker
 To run the data analysis pipeline without docker:
-1. Clone this repository
+1. Clone or download this repository
 2. Execute the following command in the terminal, at the root of the project
 
 ```
@@ -81,6 +81,28 @@ make clean
 # to run the analyses
 make all
 ```
+The `Makefile` will run the following scripts:
+1. This script takes in the raw Car Insurance data and cleans it into a data set that fits our research question.
+- Input: data/carInsurance
+- Output: data/cleanedCarInsurance.csv
+```
+Rscript src/1_data_import.R data/carInsurance data/cleanedCarInsurance.csv
+```
+
+2. This script reads the data from the first script and creates an exploratory visualization.
+- Input: data/cleanedCarInsurance.csv
+- Output: results/visualization.png
+```
+Rscript src/2_exploratory_visualization.R data/cleanedCarInsurance.csv results/visualization.png
+```
+
+3. This script reads the data from the first script, performs a hypothesis test and writes these numerical data to file in .csv format.
+- Input: data/cleanedCarInsurance.csv
+- Output: results/summarized_hypothesis_test.csv, results/alpha_h0_plot.png
+```
+Rscript src/3_hypothesis_test.R data/cleanedCarInsurance.csv results/summarized_hypothesis_test.csv results/alpha_h0_plot.png
+```
+
 
 Regardless of the method used, the report will be rendered into a PDF document in the `report` folder
 
