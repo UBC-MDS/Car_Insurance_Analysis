@@ -82,6 +82,7 @@ make clean
 make all
 ```
 The `Makefile` will run the following scripts:
+
 **Step 1.** This script takes in the raw Car Insurance data and cleans it into a data set that fits our research question.
 - Input: data/carInsurance
 - Output: data/cleanedCarInsurance.csv
