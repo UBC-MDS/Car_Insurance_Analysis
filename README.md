@@ -45,7 +45,7 @@ To  report the results of our analysis we will compute the acceptance rate of ca
 
 To report the results of our analysis we compute the acceptance rate of car insurance offers matching the null hypothesis and use a model of $H_0$ to generate a null hypothesis distribution. Then, by plotting the distributions for both groups, we evaluate where the test statistics falls on the distributions and determine whether we can reject the null hypothesis.
 
-The report can be accessed at https://github.com/UBC-MDS/Car_Insurance_Analysis/blob/master/report/report.md
+The report can be accessed at [report/report.md](https://github.com/UBC-MDS/Car_Insurance_Analysis/blob/master/report/report.md)
 
 ## Usage
 
@@ -105,19 +105,20 @@ Rscript src/3_hypothesis_test.R data/cleanedCarInsurance.csv results/summarized_
 ```
 
 
-Regardless of the method used, the report will be rendered into a PDF document in the `report` folder
+Regardless of the method used, the report will be rendered into a .md document in the [report.md](https://github.com/UBC-MDS/Car_Insurance_Analysis/blob/master/report/report.md)
 
 ## Dependencies
 
-R version 3.5.1
+R packages:
 
-- library(ggplot2) - version: ggplot2_3.0.0
-- library(tidyverse) -version: tidyverse_1.2.1
-- library(infer)-version: infer_0.3.1
-- library(broom) -version: broom_0.5.0
+- ggplot2 3.0.0
+- tidyverse 1.2.1
+- infer 0.3.1
+- broom 0.5.0
 
 
 ## Releases
  - [V1.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v1.0) Proposal
  - [V2.0.2](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v2.0.2) Milestone 1
  - [V3.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v3.0) Milestone 2
+ - [V4.0](https://github.com/UBC-MDS/Car_Insurance_Analysis/releases/tag/v4.0) Final Project
