@@ -11,6 +11,8 @@
 library(tidyverse)
 library(infer)
 
+pdf(NULL)
+
 # read in command line arguments
 args <- commandArgs(trailingOnly = TRUE)
 input_file <- args[1]
@@ -56,6 +58,8 @@ h0_dist <- h0_dist + geom_vline(xintercept = c(ci_lower, ci_upper),
                                  lty = 2)
 
 # visualize delta* on H0 distribution
+png(file=plot_file, width = 5, height = 5, units = "in", res = 600)
+
 (h0_dist <- h0_dist +
     geom_vline(xintercept = delta_sample, color = "red"))
 
@@ -77,7 +81,4 @@ car_insurance_summary <- data.frame("delta*" = delta_sample,
 write_csv(car_insurance_summary, output_file)
 
 # save plot with alpha to plot_file
-ggsave(plot_file)
-
-
-
+dev.off()

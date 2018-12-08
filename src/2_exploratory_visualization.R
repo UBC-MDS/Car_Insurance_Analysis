@@ -21,6 +21,8 @@ input_data <- input_data %>%
   mutate(CarInsurance = factor(CarInsurance, levels = c(0, 1), labels = c("Offer Refused", "Bought")), Marital = factor(Marital))
 
 # visualize the data
+png(file=output_file, width = 5, height = 5, units = "in", res = 600)
+
 input_data %>%
   ggplot(aes(x = CarInsurance, fill = CarInsurance)) +
   geom_bar(aes(y = (..count..)/sum(..count..)), position = position_dodge(), show.legend = FALSE) +
@@ -31,4 +33,4 @@ input_data %>%
   ggtitle("Relationship between car insurance purchase and marital status") +
   theme(plot.title = element_text(hjust = 0.5))
 
-ggsave(output_file)
+dev.off()
